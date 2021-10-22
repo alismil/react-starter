@@ -1,5 +1,3 @@
-import { parentPort } from "worker_threads";
-
 interface PlaceProps {
   title: string;
   place: string;
