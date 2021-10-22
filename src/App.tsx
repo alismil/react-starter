@@ -1,7 +1,7 @@
 import PageHeader from "./components/page-header";
 import Place from "./components/place";
 import PageFooter from "./components/page-footer";
-import {PlaceProps} from "./components/place";
+import { PlaceProps } from "./components/place";
 
 const data: PlaceProps[] = [
   {
