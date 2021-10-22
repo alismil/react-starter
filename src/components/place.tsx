@@ -1,4 +1,4 @@
-interface PlaceProps {
+export interface PlaceProps {
   title: string;
   place: string;
   country: string;

@@ -1,15 +1,7 @@
 import PageHeader from "./components/page-header";
 import Place from "./components/place";
 import PageFooter from "./components/page-footer";
-
-interface PlaceProps {
-  title: string;
-  place: string;
-  country: string;
-  imageURL: string;
-  googleMapsURL: string;
-  description: string;
-}
+import {PlaceProps} from "./components/place";
 
 const data: PlaceProps[] = [
   {
@@ -41,13 +33,11 @@ const data: PlaceProps[] = [
   },
 ];
 
-const places = data.map(Place);
-
 function App(): JSX.Element {
   return (
     <>
       <PageHeader />
-      {places}
+      {data.map(Place)}
       <PageFooter />
     </>
   );
